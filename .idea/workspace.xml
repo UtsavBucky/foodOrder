@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="93a7e519-dcba-4b07-a435-e10d69dfc97e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kWSTtKRdXoJWmbBkO8A6bD6SyN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DEBUGGABLE_DEVICE" value="vivo-vivo_y51l-54b3646b" />
+    <property name="DEBUGGABLE_PROCESS" value="com.utsavbucky.onebanc" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc" />
+    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc" />
+      <recent name="$PROJECT_DIR$/app/src/main/java" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.utsavbucky.onebanc" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.utsavbucky.onebanc.adapters" />
+    </key>
+    <key name="android.template.1633154204">
+      <recent name="com.utsavbucky.onebanc" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.utsavbucky.onebanc.models" />
+      <recent name="com.utsavbucky.onebanc.adapters" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="OneBanc.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="93a7e519-dcba-4b07-a435-e10d69dfc97e" name="Default Changelist" comment="" />
+      <created>1605814864632</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605814864632</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="801" y="239" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1605874052555">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="801" y="239" width="374" height="626" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1605874052555" />
+    <state x="597" y="477" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605870536204">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="597" y="477" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1605870536204" />
+    <state x="746" y="434" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1605870539154">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="746" y="434" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/67.27.1853.1053@67.27.1853.1053" timestamp="1605870539154" />
+    <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605871227734">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1605871227734" />
+    <state x="1286" y="324" key="#xdebugger.evaluate" timestamp="1605884007465">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1286" y="324" key="#xdebugger.evaluate/67.27.1853.1053@67.27.1853.1053" timestamp="1605884007465" />
+    <state x="576" y="310" width="824" height="484" key="AndroidCreateResourceDirectoryDialog" timestamp="1605870791973">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="576" y="310" width="824" height="484" key="AndroidCreateResourceDirectoryDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1605870791973" />
+    <state x="747" y="300" key="AndroidProcessChooserDialog" timestamp="1605883989675">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="747" y="300" key="AndroidProcessChooserDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1605883989675" />
+    <state width="462" height="506" key="DebuggerActiveHint" timestamp="1605879154966">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="462" height="506" key="DebuggerActiveHint/67.27.1853.1053@67.27.1853.1053" timestamp="1605879154966" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1605854443777">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1605854443777" />
+    <state width="1807" height="167" key="GridCell.Tab.0.bottom" timestamp="1605884469462">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="167" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1605884469462" />
+    <state width="1807" height="167" key="GridCell.Tab.0.center" timestamp="1605884469461">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="167" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1605884469461" />
+    <state width="1807" height="167" key="GridCell.Tab.0.left" timestamp="1605884469461">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="167" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1605884469461" />
+    <state width="1807" height="167" key="GridCell.Tab.0.right" timestamp="1605884469462">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="167" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1605884469462" />
+    <state x="482" y="187" key="SettingsEditor" timestamp="1605889662697">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1605889662697" />
+    <state x="682" y="262" width="623" height="580" key="find.popup" timestamp="1605870606443">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="682" y="262" width="623" height="580" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1605870606443" />
+    <state x="772" y="449" width="433" height="207" key="git4idea.ui.GitResetDialog" timestamp="1605889489352">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="772" y="449" width="433" height="207" key="git4idea.ui.GitResetDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1605889489352" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/adapters/MenusAdapter.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/adapters/MenusAdapter.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/adapters/MenusAdapter.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/adapters/MenusAdapter.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

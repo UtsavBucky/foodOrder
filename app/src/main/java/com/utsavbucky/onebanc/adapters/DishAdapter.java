@@ -1,0 +1,67 @@
+package com.utsavbucky.onebanc.adapters;
+
+import android.content.Context;
+import android.content.Intent;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.utsavbucky.onebanc.MainActivity;
+import com.utsavbucky.onebanc.MenuActivity;
+import com.utsavbucky.onebanc.R;
+import com.utsavbucky.onebanc.customlisteners.AdapterItemClickListener;
+import com.utsavbucky.onebanc.models.*;
+
+import java.util.List;
+
+public class DishAdapter extends RecyclerView.Adapter<DishAdapter.MyViewHolder> {
+    private List<Dishes> dishesList;
+    Context context;
+
+    class MyViewHolder extends RecyclerView.ViewHolder {
+        TextView dishName;
+        ImageView dishImage;
+        LinearLayout parentLayout;
+        MyViewHolder(View view) {
+            super(view);
+            dishImage = view.findViewById(R.id.dish_img);
+            dishName = view.findViewById(R.id.dish_name);
+            parentLayout = view.findViewById(R.id.parent_layout);
+        }
+    }
+    public DishAdapter(Context context,List<Dishes> dishesList) {
+        this.context = context;
+        this.dishesList = dishesList;
+    }
+    @NonNull
+    @Override
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.dishes_item, parent, false);
+        return new MyViewHolder(itemView);
+    }
+    @Override
+    public void onBindViewHolder(MyViewHolder holder, int position) {
+        Dishes dish = dishesList.get(position);
+        holder.dishName.setText(dish.dishName);
+        holder.parentLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, MenuActivity.class);
+                context.startActivity(intent);
+            }
+        });
+
+    }
+    @Override
+    public int getItemCount() {
+        return dishesList.size();
+    }
+}
