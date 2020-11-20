@@ -10,7 +10,29 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93a7e519-dcba-4b07-a435-e10d69dfc97e" name="Default Changelist" comment="" />
+    <list default="true" id="93a7e519-dcba-4b07-a435-e10d69dfc97e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/OneBanc.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/OneBanc.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/checkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/checkout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/customlisteners/AdapterItemClickListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/customlisteners/Authlistener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/customlisteners/BookingConfirmationItemSelectedListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/customlisteners/GenericErrorListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/customlisteners/JAccessTokenListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/customlisteners/JsonArrayListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/customlisteners/JsonObjectListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/customlisteners/LiveSessionBookingListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/models/Dishes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc/models/Dishes.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +56,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kWSTtKRdXoJWmbBkO8A6bD6SyN" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,7 +71,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -60,8 +84,8 @@
       <recent name="$PROJECT_DIR$/app/src/main/java" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/utsavbucky/onebanc" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.utsavbucky.onebanc" />
@@ -157,10 +181,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="801" y="239" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1605874052555">
+    <state x="801" y="239" width="374" height="626" key="#com.intellij.ide.util.MemberChooser" timestamp="1605892468164">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="801" y="239" width="374" height="626" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1605874052555" />
+    <state x="801" y="239" width="374" height="626" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1605892468164" />
     <state x="597" y="477" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605870536204">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -177,10 +201,14 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1286" y="324" key="#xdebugger.evaluate/67.27.1853.1053@67.27.1853.1053" timestamp="1605884007465" />
-    <state x="576" y="310" width="824" height="484" key="AndroidCreateResourceDirectoryDialog" timestamp="1605870791973">
+    <state x="167" y="127" width="1653" height="855" key="AVDManager" timestamp="1605896071299">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="576" y="310" width="824" height="484" key="AndroidCreateResourceDirectoryDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1605870791973" />
+    <state x="167" y="127" width="1653" height="855" key="AVDManager/67.27.1853.1053@67.27.1853.1053" timestamp="1605896071299" />
+    <state x="576" y="310" width="824" height="484" key="AndroidCreateResourceDirectoryDialog" timestamp="1605890422186">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="576" y="310" width="824" height="484" key="AndroidCreateResourceDirectoryDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1605890422186" />
     <state x="747" y="300" key="AndroidProcessChooserDialog" timestamp="1605883989675">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

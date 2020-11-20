@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -14,6 +15,8 @@ import android.widget.TextView;
 import com.utsavbucky.onebanc.adapters.MenusAdapter;
 import com.utsavbucky.onebanc.adapters.OrdersAdapter;
 import com.utsavbucky.onebanc.models.Dishes;
+import com.utsavbucky.onebanc.models.Orders;
+import com.utsavbucky.onebanc.utils.Util;
 
 import java.io.Serializable;
 import java.security.SecureRandom;
@@ -24,11 +27,13 @@ public class checkout extends AppCompatActivity {
     RecyclerView orderRecyclerView;
     private OrdersAdapter orderAdapter;
     ArrayList<Dishes> orderlist = new ArrayList<>();
+    SharedPreferences ordersSharedPreferences;
     RelativeLayout orderButton;
     TextView orderQuantity, orderPrice;
     int nos, total;
     static final String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     static SecureRandom rnd = new SecureRandom();
+    ArrayList<Orders> previousOrdersList = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,11 +46,16 @@ public class checkout extends AppCompatActivity {
         Intent i = getIntent();
         orderlist = (ArrayList<Dishes>) i.getSerializableExtra("orderList");
         setOrderList();
+
+        previousOrdersList = Util.getOrdersList(checkout.this);
         orderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
              String orderId = generateOrderId(10);
+             //Orders currentOrder = new Orders(orderlist,orderId,total,);
+
             }
+
         });
     }
 
