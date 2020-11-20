@@ -56,11 +56,7 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     private void setMenuList() {
-        menulist.add(new Dishes("","Dhokla","1",constants.NORTH_INDIAN,100,0,0));
-        menulist.add(new Dishes("","Dosa","2", constants.SOUTH_INDIAN,80,0,0));
-        menulist.add(new Dishes("","Paneer pasanda","3", constants.NORTH_INDIAN, 200,0,0));
-        menulist.add(new Dishes("","Pizza","4", constants.ITALIAN, 350,0,0));
-        menulist.add(new Dishes("","Burger","5", constants.CHINESE,120,0,0));
+
         menuAdapter = new MenusAdapter(menulist);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
         menuRecyclerView.setLayoutManager(layoutManager);

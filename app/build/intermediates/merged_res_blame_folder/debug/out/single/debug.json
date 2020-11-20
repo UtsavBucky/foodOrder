@@ -52,6 +52,10 @@
         "source": "/home/utsav/Downloads/OneBanc/app/src/main/res/layout/activity_main.xml"
     },
     {
+        "merged": "/home/utsav/Downloads/OneBanc/app/build/intermediates/res/merged/debug/layout_category_item.xml.flat",
+        "source": "/home/utsav/Downloads/OneBanc/app/src/main/res/layout/category_item.xml"
+    },
+    {
         "merged": "/home/utsav/Downloads/OneBanc/app/build/intermediates/res/merged/debug/layout_dishes_item.xml.flat",
         "source": "/home/utsav/Downloads/OneBanc/app/src/main/res/layout/dishes_item.xml"
     },
@@ -98,6 +102,10 @@
     {
         "merged": "/home/utsav/Downloads/OneBanc/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/home/utsav/Downloads/OneBanc/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/utsav/Downloads/OneBanc/app/build/intermediates/res/merged/debug/layout_previous_order_item.xml.flat",
+        "source": "/home/utsav/Downloads/OneBanc/app/src/main/res/layout/previous_order_item.xml"
     },
     {
         "merged": "/home/utsav/Downloads/OneBanc/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",

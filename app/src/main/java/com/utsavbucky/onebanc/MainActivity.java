@@ -10,21 +10,27 @@ import android.os.Bundle;
 
 import com.google.gson.Gson;
 import com.utsavbucky.onebanc.adapters.DishAdapter;
+import com.utsavbucky.onebanc.adapters.PreviousOrdersAdapter;
 import com.utsavbucky.onebanc.models.Category;
 import com.utsavbucky.onebanc.models.Dishes;
 import com.utsavbucky.onebanc.models.Orders;
 import com.utsavbucky.onebanc.utils.Util;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView topDishes, previousOrders;
     private DishAdapter topDishesAdapter;
+
     ArrayList<Dishes> dishesList = new ArrayList<>();
     ArrayList<Category> categoryList = new ArrayList<>();
     SharedPreferences dishSharedPreferences, categorySharedPreferences;
     ArrayList<Orders> ordersList = new ArrayList<>();
+    private PreviousOrdersAdapter previousOrdersAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,6 +74,15 @@ public class MainActivity extends AppCompatActivity {
     
     public void setTopDishes() {
 
+        dishesList.clear();
+        dishesList = Util.getDishesList(MainActivity.this);
+
+        Collections.sort(dishesList, new Comparator<Dishes>() {
+            @Override
+            public int compare(Dishes d1, Dishes d2) {
+                return d1.soldQuantity - d2.soldQuantity;
+            }
+        });
         topDishesAdapter = new DishAdapter(MainActivity.this,dishesList);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.HORIZONTAL, false);
         topDishes.setLayoutManager(layoutManager);
@@ -76,7 +91,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setPreviousOrders() {
+        ordersList.clear();
         ordersList = Util.getOrdersList(MainActivity.this);
-
+        if(ordersList!=null && ordersList.size()>0) {
+            previousOrdersAdapter = new PreviousOrdersAdapter(ordersList);
+            LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
+            previousOrders.setLayoutManager(layoutManager);
+            previousOrders.setItemAnimator(new DefaultItemAnimator());
+            previousOrders.setAdapter(previousOrdersAdapter);
+        }
     }
 }

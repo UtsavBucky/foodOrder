@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
 import com.utsavbucky.onebanc.adapters.MenusAdapter;
 import com.utsavbucky.onebanc.adapters.OrdersAdapter;
 import com.utsavbucky.onebanc.models.Dishes;
@@ -20,14 +21,19 @@ import com.utsavbucky.onebanc.utils.Util;
 
 import java.io.Serializable;
 import java.security.SecureRandom;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class checkout extends AppCompatActivity {
     RecyclerView orderRecyclerView;
     private OrdersAdapter orderAdapter;
     ArrayList<Dishes> orderlist = new ArrayList<>();
-    SharedPreferences ordersSharedPreferences;
+    ArrayList<Dishes> disheslist = new ArrayList<>();
+
+    SharedPreferences ordersSharedPreferences, dishSharedPreferences;
     RelativeLayout orderButton;
     TextView orderQuantity, orderPrice;
     int nos, total;
@@ -45,14 +51,50 @@ public class checkout extends AppCompatActivity {
 
         Intent i = getIntent();
         orderlist = (ArrayList<Dishes>) i.getSerializableExtra("orderList");
+        disheslist = Util.getDishesList(checkout.this);
         setOrderList();
 
         previousOrdersList = Util.getOrdersList(checkout.this);
         orderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             String orderId = generateOrderId(10);
-             //Orders currentOrder = new Orders(orderlist,orderId,total,);
+                String orderId = generateOrderId(10);
+                DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                Date date = new Date();
+                String currentDate = dateFormat.format(date);
+                Orders currentOrder = new Orders(orderlist,orderId,total,currentDate);
+
+                if(previousOrdersList!=null && previousOrdersList.size()>0){
+                previousOrdersList.add(currentOrder);
+                } else {
+                    previousOrdersList = new ArrayList<>();
+                    previousOrdersList.add(currentOrder);
+                }
+
+                ordersSharedPreferences = getSharedPreferences(constants.ORDERS_LIST,0);
+
+                SharedPreferences.Editor editorOrders = ordersSharedPreferences.edit();
+                editorOrders.putString("ordersList",new Gson().toJson(previousOrdersList));
+                editorOrders.apply();
+
+                for(int i=0;i<orderlist.size();i++)    {
+                    nos = nos + orderlist.get(i).quantity;
+                    total = total + orderlist.get(i).quantity*orderlist.get(i).price;
+
+                    for(int j=0; j<disheslist.size();j++){
+                        if(orderlist.get(i)==disheslist.get(j)){
+                            disheslist.get(j).soldQuantity = disheslist.get(j).soldQuantity + orderlist.get(i).quantity;
+                            break;
+                        }
+                    }
+                }
+
+                dishSharedPreferences=getSharedPreferences(constants.DISHES_LIST,0);
+
+                SharedPreferences.Editor editorDishes = dishSharedPreferences.edit();
+                editorDishes.putString("dishesList",new Gson().toJson(disheslist));
+                editorDishes.apply();
+
 
             }
 
@@ -60,15 +102,10 @@ public class checkout extends AppCompatActivity {
     }
 
     private void setOrderList() {
-        /*orderlist.add(new Dishes("","Dhokla","1",constants.NORTH_INDIAN,100,0,0));
-        orderlist.add(new Dishes("","Dosa","2", constants.SOUTH_INDIAN,80,0,0));
-        orderlist.add(new Dishes("","Paneer pasanda","3", constants.NORTH_INDIAN, 200,0,0));
-        orderlist.add(new Dishes("","Pizza","4", constants.ITALIAN, 350,0,0));
-        orderlist.add(new Dishes("","Burger","5", constants.CHINESE,120,0,0));*/
-
-        for(int i=0;i<orderlist.size();i++)    {
+         for(int i=0;i<orderlist.size();i++)    {
             nos = nos + orderlist.get(i).quantity;
             total = total + orderlist.get(i).quantity*orderlist.get(i).price;
+
         }
         orderAdapter = new OrdersAdapter(orderlist);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);

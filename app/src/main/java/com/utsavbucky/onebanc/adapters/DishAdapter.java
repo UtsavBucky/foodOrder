@@ -16,7 +16,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.utsavbucky.onebanc.MainActivity;
 import com.utsavbucky.onebanc.MenuActivity;
 import com.utsavbucky.onebanc.R;
-import com.utsavbucky.onebanc.customlisteners.AdapterItemClickListener;
 import com.utsavbucky.onebanc.models.*;
 
 import java.util.List;
