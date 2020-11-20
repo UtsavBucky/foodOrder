@@ -6,48 +6,52 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-8-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml
+8-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml
+9-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:5:5-21:19
-12        android:allowBackup="true"
-12-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.1.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/73530a2d0c1df4b3085807c82555ce12/core-1.1.0/AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/Theme.OneBanc" >
-20-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:11:9-45
-21        <activity android:name="com.utsavbucky.onebanc.checkout" />
-21-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:12:9-55
-21-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:12:19-43
-22        <activity android:name="com.utsavbucky.onebanc.MenuActivity" />
-22-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:13:9-50
-22-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:13:19-47
-23        <activity android:name="com.utsavbucky.onebanc.MainActivity" >
-23-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:14:9-20:20
-23-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:14:19-47
-24            <intent-filter>
-24-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:15:13-19:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:16:17-69
-25-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:16:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:18:17-77
-27-->/home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:18:27-74
-28            </intent-filter>
-29        </activity>
-30    </application>
-31
-32</manifest>
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:4:5-66
+11-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <application
+13-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:6:5-22:19
+14        android:allowBackup="true"
+14-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:7:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.1.0] C:\Users\A.R\.gradle\caches\transforms-2\files-2.1\73530a2d0c1df4b3085807c82555ce12\core-1.1.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:8:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:9:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:10:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:11:9-35
+21        android:testOnly="true"
+22        android:theme="@style/Theme.OneBanc" >
+22-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:12:9-45
+23        <activity android:name="com.utsavbucky.onebanc.checkout" />
+23-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:13:9-45
+23-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:13:19-43
+24        <activity android:name="com.utsavbucky.onebanc.MenuActivity" />
+24-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:14:9-50
+24-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:14:19-47
+25        <activity android:name="com.utsavbucky.onebanc.MainActivity" >
+25-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:15:9-21:20
+25-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:15:19-47
+26            <intent-filter>
+26-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:16:13-20:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:17:17-69
+27-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:17:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:19:17-77
+29-->C:\Users\A.R\Desktop\Utsav\foodOrder\app\src\main\AndroidManifest.xml:19:27-74
+30            </intent-filter>
+31        </activity>
+32    </application>
+33
+34</manifest>

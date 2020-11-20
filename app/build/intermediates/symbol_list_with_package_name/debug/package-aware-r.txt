@@ -1479,6 +1479,7 @@ id coordinator
 id custom
 id customPanel
 id cut
+id dataBinding
 id date_picker_actions
 id decor_content_parent
 id default_activity_button
@@ -1512,6 +1513,7 @@ id fixed
 id forever
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
@@ -1522,6 +1524,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id image_food
 id info
 id invisible
 id italic
@@ -1571,6 +1574,7 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
+id name
 id navigation_header_container
 id never
 id noScroll
@@ -1581,7 +1585,11 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id onAttachStateChangeListener
+id onDateChanged
 id order_button
+id order_date
+id order_id
 id order_price
 id order_quantity
 id orders_list
@@ -1667,6 +1675,7 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textWatcher
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -1691,6 +1700,7 @@ id unlabeled
 id up
 id useLogo
 id view_offset_helper
+id view_pager
 id visible
 id withText
 id wrap
@@ -1758,6 +1768,8 @@ layout abc_tooltip
 layout activity_checkout
 layout activity_main
 layout activity_menu
+layout category_item
+layout category_viewpager_item
 layout checkout_item
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -1811,6 +1823,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout previous_order_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
