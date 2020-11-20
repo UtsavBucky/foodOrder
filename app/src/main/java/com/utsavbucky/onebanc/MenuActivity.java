@@ -15,6 +15,7 @@ import android.widget.RelativeLayout;
 import com.utsavbucky.onebanc.adapters.DishAdapter;
 import com.utsavbucky.onebanc.adapters.MenusAdapter;
 import com.utsavbucky.onebanc.models.Dishes;
+import com.utsavbucky.onebanc.utils.Util;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -23,8 +24,10 @@ public class MenuActivity extends AppCompatActivity {
     RecyclerView menuRecyclerView;
     private MenusAdapter menuAdapter;
     ArrayList<Dishes> menulist = new ArrayList<>();
+    ArrayList<Dishes> dishesList = new ArrayList<>();
     ArrayList<Dishes> finalOrderList = new ArrayList<>();
     RelativeLayout checkoutButton;
+    int categoryId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +35,17 @@ public class MenuActivity extends AppCompatActivity {
 
         menuRecyclerView = findViewById(R.id.items_list);
         checkoutButton = findViewById(R.id.order_button);
+        Intent intent = getIntent();
+        categoryId = intent.getIntExtra("category_id",0);
         setMenuList();
+
+        dishesList = Util.getDishesList(MenuActivity.this);
+        for(int i=0;i<dishesList.size();i++){
+           if(dishesList.get(i).dishCategory == categoryId){
+               menulist.add(dishesList.get(i));
+           }
+        }
+
 
         checkoutButton.setOnClickListener(new View.OnClickListener() {
             @Override

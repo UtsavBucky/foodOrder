@@ -90,6 +90,11 @@ public class MainActivity extends AppCompatActivity {
         dishesList.add(new Dishes("https://farm1.staticflickr.com/269/19741628821_7ff0dd8b7c_o.jpg","Paneer pasanda","3", constants.NORTH_INDIAN, 200,0,0));
         dishesList.add(new Dishes("https://farm1.staticflickr.com/269/19741628821_7ff0dd8b7c_o.jpg","Pizza","4", constants.ITALIAN, 350,0,0));
         dishesList.add(new Dishes("https://simply-delicious-food.com/wp-content/uploads/2015/07/Bacon-and-cheese-burgers-3-500x500.jpg","Burger","5", constants.CHINESE,120,0,0));
+        dishesList.add(new Dishes("https://cdn2.foodviva.com/static-content/food-images/snacks-recipes/khaman-dhokla-recipe/khaman-dhokla-recipe.jpg","Spanakopita","6",constants.MEDITERRANEAN,100,0,0));
+        dishesList.add(new Dishes("https://sukhis.com/wp-content/uploads/2020/01/Dosa-500x400.jpg","Chicken Shawarma","7", constants.MEDITERRANEAN,80,0,0));
+        dishesList.add(new Dishes("https://farm1.staticflickr.com/269/19741628821_7ff0dd8b7c_o.jpg","Paneer kofta","8", constants.NORTH_INDIAN, 200,0,0));
+        dishesList.add(new Dishes("https://farm1.staticflickr.com/269/19741628821_7ff0dd8b7c_o.jpg","Garlic Bread","9", constants.ITALIAN, 350,0,0));
+        dishesList.add(new Dishes("https://simply-delicious-food.com/wp-content/uploads/2015/07/Bacon-and-cheese-burgers-3-500x500.jpg","Chowmein","10", constants.CHINESE,120,0,0));
 
         dishSharedPreferences=getSharedPreferences(constants.DISHES_LIST,0);
         categorySharedPreferences = getSharedPreferences(constants.CATEGORIES_LIST,0);

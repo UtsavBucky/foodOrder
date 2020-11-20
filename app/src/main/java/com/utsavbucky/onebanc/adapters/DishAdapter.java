@@ -56,14 +56,6 @@ public class DishAdapter extends RecyclerView.Adapter<DishAdapter.MyViewHolder> 
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Dishes dish = dishesList.get(position);
         holder.dishName.setText(dish.dishName);
-        holder.parentLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, MenuActivity.class);
-                context.startActivity(intent);
-            }
-        });
-
         try{
             Glide.with(context).load(dishesList.get(position).getDishImg()).into(holder.dishImage);
         }catch (Exception e){
