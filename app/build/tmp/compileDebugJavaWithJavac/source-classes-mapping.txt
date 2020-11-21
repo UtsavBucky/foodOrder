@@ -22,15 +22,16 @@ com/utsavbucky/onebanc/checkout.java
  com.utsavbucky.onebanc.checkout$1
 com/utsavbucky/onebanc/databinding/ActivityMainBinding.java
  com.utsavbucky.onebanc.databinding.ActivityMainBinding
-com/utsavbucky/onebanc/DataBindingTriggerClass.java
- com.utsavbucky.onebanc.DataBindingTriggerClass
+com/utsavbucky/onebanc/MainActivity.java
+ com.utsavbucky.onebanc.MainActivity
+ com.utsavbucky.onebanc.MainActivity$1
+ com.utsavbucky.onebanc.MainActivity$2
 com/utsavbucky/onebanc/models/Orders.java
  com.utsavbucky.onebanc.models.Orders
-com/utsavbucky/onebanc/utils/Util.java
- com.utsavbucky.onebanc.utils.Util
- com.utsavbucky.onebanc.utils.Util$1
- com.utsavbucky.onebanc.utils.Util$2
- com.utsavbucky.onebanc.utils.Util$3
+com/utsavbucky/onebanc/adapters/DishAdapter.java
+ com.utsavbucky.onebanc.adapters.DishAdapter
+ com.utsavbucky.onebanc.adapters.DishAdapter$1
+ com.utsavbucky.onebanc.adapters.DishAdapter$MyViewHolder
 com/utsavbucky/onebanc/adapters/OrdersAdapter.java
  com.utsavbucky.onebanc.adapters.OrdersAdapter
  com.utsavbucky.onebanc.adapters.OrdersAdapter$MyViewHolder
@@ -38,11 +39,10 @@ com/utsavbucky/onebanc/adapters/BaseViewHolder.java
  com.utsavbucky.onebanc.adapters.BaseViewHolder
 com/utsavbucky/onebanc/models/Dishes.java
  com.utsavbucky.onebanc.models.Dishes
-com/utsavbucky/onebanc/MainActivity.java
- com.utsavbucky.onebanc.MainActivity
- com.utsavbucky.onebanc.MainActivity$1
- com.utsavbucky.onebanc.MainActivity$2
-com/utsavbucky/onebanc/adapters/DishAdapter.java
- com.utsavbucky.onebanc.adapters.DishAdapter
- com.utsavbucky.onebanc.adapters.DishAdapter$1
- com.utsavbucky.onebanc.adapters.DishAdapter$MyViewHolder
+com/utsavbucky/onebanc/utils/Util.java
+ com.utsavbucky.onebanc.utils.Util
+ com.utsavbucky.onebanc.utils.Util$1
+ com.utsavbucky.onebanc.utils.Util$2
+ com.utsavbucky.onebanc.utils.Util$3
+com/utsavbucky/onebanc/DataBindingTriggerClass.java
+ com.utsavbucky.onebanc.DataBindingTriggerClass

@@ -31,7 +31,7 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:id="@+id/item_name"
-                ></TextView>
+                />
 
         <TextView
             android:layout_width="0dp"

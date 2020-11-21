@@ -108,6 +108,10 @@
         "source": "C:\\Users\\A.R\\Desktop\\Utsav\\foodOrder\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\A.R\\Desktop\\Utsav\\foodOrder\\app\\build\\intermediates\\res\\merged\\debug\\drawable_placeholder.png.flat",
+        "source": "C:\\Users\\A.R\\Desktop\\Utsav\\foodOrder\\app\\src\\main\\res\\drawable\\placeholder.png"
+    },
+    {
         "merged": "C:\\Users\\A.R\\Desktop\\Utsav\\foodOrder\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\A.R\\Desktop\\Utsav\\foodOrder\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
