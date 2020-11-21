@@ -1891,6 +1891,7 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
+string home
 string icon_content_description
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description

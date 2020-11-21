@@ -2,11 +2,15 @@ package com.utsavbucky.onebanc;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
@@ -42,17 +46,28 @@ public class MainActivity extends BaseActivity {
     SharedPreferences dishSharedPreferences, categorySharedPreferences;
     ArrayList<Orders> ordersList = new ArrayList<>();
     private PreviousOrdersAdapter previousOrdersAdapter;
+    private BroadcastReceiver reciever = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if(intent.getAction().equals("order_placed")){
+                setTopDishes();
+                setPreviousOrders();
+            }
+        }
+    };
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this,R.layout.activity_main);
         getSupportActionBar().setTitle("Home");
-      //  getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        LocalBroadcastManager.getInstance(this).registerReceiver(reciever, new IntentFilter("order_placed"));
+
 
         topDishes = findViewById(R.id.top_dishes);
         previousOrders = findViewById(R.id.previous_orders);
-
         if(Util.getCategoryList(MainActivity.this)== null ||
                 Util.getDishesList(MainActivity.this) == null)
         {

@@ -16,6 +16,7 @@ import android.widget.RelativeLayout;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 
 public class OrderConfirmationDialog extends DialogFragment {
@@ -36,6 +37,9 @@ public class OrderConfirmationDialog extends DialogFragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), MainActivity.class);
+                intent.setAction("order_placed");
+                LocalBroadcastManager.getInstance(getContext()).sendBroadcast(intent);
+
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 getDialog().dismiss();
