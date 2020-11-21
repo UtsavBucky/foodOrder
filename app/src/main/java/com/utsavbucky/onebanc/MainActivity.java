@@ -137,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
     public void setPreviousOrders() {
         ordersList.clear();
         ordersList = Util.getOrdersList(MainActivity.this);
+
         Collections.reverse(ordersList);
         if(ordersList!=null && ordersList.size()>0) {
             previousOrdersAdapter = new PreviousOrdersAdapter(ordersList);
