@@ -14,19 +14,17 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
-import com.utsavbucky.onebanc.adapters.MenusAdapter;
 import com.utsavbucky.onebanc.adapters.OrdersAdapter;
+import com.utsavbucky.onebanc.fragments.OrderConfirmationDialog;
 import com.utsavbucky.onebanc.models.Dishes;
 import com.utsavbucky.onebanc.models.Orders;
 import com.utsavbucky.onebanc.utils.Util;
 
-import java.io.Serializable;
 import java.security.SecureRandom;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class checkout extends AppCompatActivity {
     RecyclerView orderRecyclerView;
@@ -60,7 +58,7 @@ public class checkout extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String orderId = generateOrderId(10);
-                DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
                 Date date = new Date();
                 String currentDate = dateFormat.format(date);
                 Orders currentOrder = new Orders(orderlist,orderId,total,currentDate);

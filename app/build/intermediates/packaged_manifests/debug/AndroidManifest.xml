@@ -20,9 +20,15 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.OneBanc" >
-        <activity android:name="com.utsavbucky.onebanc.checkout" />
-        <activity android:name="com.utsavbucky.onebanc.MenuActivity" />
-        <activity android:name="com.utsavbucky.onebanc.MainActivity" >
+        <activity
+            android:name="com.utsavbucky.onebanc.checkout"
+            android:label="Place order" />
+        <activity
+            android:name="com.utsavbucky.onebanc.MenuActivity"
+            android:label="Menu Card" />
+        <activity
+            android:name="com.utsavbucky.onebanc.MainActivity"
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

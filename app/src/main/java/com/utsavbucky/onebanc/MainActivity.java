@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 
 import com.google.gson.Gson;
 import com.utsavbucky.onebanc.adapters.DishAdapter;
@@ -140,7 +141,8 @@ public class MainActivity extends AppCompatActivity {
 
         Collections.reverse(ordersList);
         if(ordersList!=null && ordersList.size()>0) {
-            previousOrdersAdapter = new PreviousOrdersAdapter(ordersList);
+            binding.previousOrderHeader.setVisibility(View.VISIBLE);
+            previousOrdersAdapter = new PreviousOrdersAdapter(MainActivity.this,ordersList);
             LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
             previousOrders.setLayoutManager(layoutManager);
             previousOrders.setItemAnimator(new DefaultItemAnimator());

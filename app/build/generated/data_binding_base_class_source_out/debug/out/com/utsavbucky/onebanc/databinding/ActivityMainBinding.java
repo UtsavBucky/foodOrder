@@ -4,6 +4,7 @@ package com.utsavbucky.onebanc.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
@@ -16,6 +17,9 @@ import java.lang.Object;
 
 public abstract class ActivityMainBinding extends ViewDataBinding {
   @NonNull
+  public final TextView previousOrderHeader;
+
+  @NonNull
   public final RecyclerView previousOrders;
 
   @NonNull
@@ -25,8 +29,10 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final ViewPager viewPager;
 
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      RecyclerView previousOrders, RecyclerView topDishes, ViewPager viewPager) {
+      TextView previousOrderHeader, RecyclerView previousOrders, RecyclerView topDishes,
+      ViewPager viewPager) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.previousOrderHeader = previousOrderHeader;
     this.previousOrders = previousOrders;
     this.topDishes = topDishes;
     this.viewPager = viewPager;

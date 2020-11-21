@@ -1,4 +1,4 @@
-package com.utsavbucky.onebanc;
+package com.utsavbucky.onebanc.fragments;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -17,6 +17,9 @@ import android.widget.RelativeLayout;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
+import com.utsavbucky.onebanc.MainActivity;
+import com.utsavbucky.onebanc.R;
+
 
 public class OrderConfirmationDialog extends DialogFragment {
     RelativeLayout dismissButton ;
@@ -26,7 +29,7 @@ public class OrderConfirmationDialog extends DialogFragment {
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
 
         Context context = getActivity();
-        AlertDialog.Builder builder = new AlertDialog.Builder(context,R.style.Dialog);
+        AlertDialog.Builder builder = new AlertDialog.Builder(context, R.style.Dialog);
         final LayoutInflater inflater = LayoutInflater.from(context);
         dialogView = inflater.inflate(R.layout.order_confirmation_dialog,null);
         dismissButton = dialogView.findViewById(R.id.homeBtn);

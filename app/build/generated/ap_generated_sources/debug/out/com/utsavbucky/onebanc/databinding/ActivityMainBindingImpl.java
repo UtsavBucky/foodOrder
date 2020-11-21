@@ -16,7 +16,8 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.view_pager, 1);
         sViewsWithIds.put(R.id.top_dishes, 2);
-        sViewsWithIds.put(R.id.previous_orders, 3);
+        sViewsWithIds.put(R.id.previous_order_header, 3);
+        sViewsWithIds.put(R.id.previous_orders, 4);
     }
     // views
     @NonNull
@@ -27,11 +28,12 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityMainBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds));
     }
     private ActivityMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (androidx.recyclerview.widget.RecyclerView) bindings[3]
+            , (android.widget.TextView) bindings[3]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[4]
             , (androidx.recyclerview.widget.RecyclerView) bindings[2]
             , (androidx.viewpager.widget.ViewPager) bindings[1]
             );

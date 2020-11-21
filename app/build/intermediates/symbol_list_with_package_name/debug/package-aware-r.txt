@@ -1496,6 +1496,7 @@ id direct
 id disableHome
 id dish_img
 id dish_name
+id dismiss_btn
 id dropdown_menu
 id edit_query
 id end
@@ -1608,6 +1609,7 @@ id peekHeight
 id percent
 id pin
 id plus
+id previous_order_header
 id previous_orders
 id progress_circular
 id progress_horizontal
@@ -1691,6 +1693,7 @@ id title_template
 id top
 id topPanel
 id top_dishes
+id total_slab
 id touch_outside
 id transition_current_scene
 id transition_layout_save
@@ -1703,6 +1706,7 @@ id unlabeled
 id up
 id useLogo
 id view_offset_helper
+id view_order
 id view_pager
 id visible
 id withText
@@ -1827,6 +1831,8 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout order_confirmation_dialog
+layout order_list_dialog
+layout order_list_item
 layout previous_order_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
