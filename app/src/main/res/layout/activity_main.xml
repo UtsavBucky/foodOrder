@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:padding="5dp"
-            android:text="Top Dishes"
+            android:text="@string/top_dishes"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -39,8 +39,8 @@
             android:layout_marginTop="10dp"
             android:padding="5dp"
             android:id="@+id/previous_order_header"
-            android:text="Previous orders"
             android:visibility="gone"
+            android:text="@string/prvious_order"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"/>

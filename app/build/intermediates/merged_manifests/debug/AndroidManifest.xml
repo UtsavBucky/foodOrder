@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name="com.utsavbucky.onebanc.OneBacApp"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -26,9 +27,7 @@
         <activity
             android:name="com.utsavbucky.onebanc.MenuActivity"
             android:label="Menu Card" />
-        <activity
-            android:name="com.utsavbucky.onebanc.MainActivity"
-            android:theme="@style/AppTheme" >
+        <activity android:name="com.utsavbucky.onebanc.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

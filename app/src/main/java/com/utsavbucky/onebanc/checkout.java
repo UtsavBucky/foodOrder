@@ -26,7 +26,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class checkout extends AppCompatActivity {
+public class checkout extends BaseActivity {
     RecyclerView orderRecyclerView;
     private OrdersAdapter orderAdapter;
     ArrayList<Dishes> orderlist = new ArrayList<>();
@@ -43,6 +43,7 @@ public class checkout extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkout);
+        getSupportActionBar().setTitle("Checkout");
         orderRecyclerView = findViewById(R.id.orders_list);
         orderButton = findViewById(R.id.checkout_button);
         orderPrice = findViewById(R.id.order_price);
@@ -120,6 +121,7 @@ public class checkout extends AppCompatActivity {
             DialogFragment orderDialog = new OrderConfirmationDialog();
             orderDialog.show(getSupportFragmentManager(), orderDialog.getTag());
             orderDialog.setCancelable(false);
+
     }
 
     String generateOrderId(int len){

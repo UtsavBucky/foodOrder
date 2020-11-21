@@ -3,6 +3,7 @@ package com.utsavbucky.onebanc.adapters;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +25,9 @@ import com.utsavbucky.onebanc.models.Orders;
 import java.util.List;
 
 public class PreviousOrdersAdapter extends RecyclerView.Adapter<PreviousOrdersAdapter.MyViewHolder> {
-    private List<Orders> ordersList;Context mContext;
+    private List<Orders> ordersList;
+    private Context mContext;
+
     class MyViewHolder extends RecyclerView.ViewHolder {
         TextView date, orderId, itemTotal;
         List<Dishes> dishList;
@@ -46,6 +49,7 @@ public class PreviousOrdersAdapter extends RecyclerView.Adapter<PreviousOrdersAd
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        mContext=parent.getContext();
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.order_list_item, parent, false);
         return new MyViewHolder(itemView);
@@ -56,7 +60,7 @@ public class PreviousOrdersAdapter extends RecyclerView.Adapter<PreviousOrdersAd
 
         holder.date.setText(order.orderDate);
         holder.itemTotal.setText("Rs."+String.valueOf(order.orderPrice));
-        holder.orderId.setText("Order id: #"+order.orderId);
+        //holder.orderId.setText("Order id: #"+order.orderId);
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,6 +73,7 @@ public class PreviousOrdersAdapter extends RecyclerView.Adapter<PreviousOrdersAd
                 orderDialog.setCancelable(true);
             }
         });
+        holder.orderId.setText(mContext.getString(R.string.order_id)+order.orderId);
 
     }
     @Override

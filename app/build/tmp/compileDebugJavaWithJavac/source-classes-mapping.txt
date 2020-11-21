@@ -1,5 +1,9 @@
 com/utsavbucky/onebanc/constants.java
  com.utsavbucky.onebanc.constants
+com/utsavbucky/onebanc/BaseActivity.java
+ com.utsavbucky.onebanc.BaseActivity
+com/utsavbucky/onebanc/OneBacApp.java
+ com.utsavbucky.onebanc.OneBacApp
 com/utsavbucky/onebanc/fragments/OrderConfirmationDialog.java
  com.utsavbucky.onebanc.fragments.OrderConfirmationDialog
  com.utsavbucky.onebanc.fragments.OrderConfirmationDialog$1
@@ -35,11 +39,15 @@ com/utsavbucky/onebanc/MainActivity.java
  com.utsavbucky.onebanc.MainActivity$1
  com.utsavbucky.onebanc.MainActivity$2
  com.utsavbucky.onebanc.MainActivity$3
+ com.utsavbucky.onebanc.MainActivity$4
 com/utsavbucky/onebanc/models/Orders.java
  com.utsavbucky.onebanc.models.Orders
 com/utsavbucky/onebanc/adapters/OrdersAdapter.java
  com.utsavbucky.onebanc.adapters.OrdersAdapter
  com.utsavbucky.onebanc.adapters.OrdersAdapter$MyViewHolder
+com/utsavbucky/onebanc/LocaleManager.java
+ com.utsavbucky.onebanc.LocaleManager
+ com.utsavbucky.onebanc.LocaleManager$LocaleDef
 com/utsavbucky/onebanc/adapters/DishAdapter.java
  com.utsavbucky.onebanc.adapters.DishAdapter
  com.utsavbucky.onebanc.adapters.DishAdapter$MyViewHolder

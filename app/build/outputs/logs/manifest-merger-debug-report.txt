@@ -1,14 +1,15 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-27:12
+ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-29:12
 MERGED from [androidx.databinding:databinding-adapters:4.1.1] /home/utsav/.gradle/caches/transforms-2/files-2.1/653e8a2a5f2f4306efc9e51130fa0138/databinding-adapters-4.1.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:4.1.1] /home/utsav/.gradle/caches/transforms-2/files-2.1/6d3afc97df86a99a5015c9a6492607aa/databinding-runtime-4.1.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.1.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/c9350c4470b6f4895016aaf418fed985/material-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/780dca39713ff2fcf4eadcaf494ac982/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/utsav/.gradle/caches/transforms-2/files-2.1/213ad6fce5ea38e5799c707ff664b050/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/7814cceeb7ac44ad46459a3c3c62875b/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/1fa276bd61947c3e74ed195b3ad0a13b/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/c85e1f195321245fafe1a599b5dddf47/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/21d604bb614ffe39ea7d46309e58b721/jetified-glide-4.11.0/AndroidManifest.xml:2:1-12:12
@@ -37,20 +38,20 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /home/utsav/.gradle/cache
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/aaff256ac919a45448a380ca9a0003ca/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/06bc4641de51b04d4df94808d6e05292/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/1b64911e987df0fea019408e241659d7/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:3:5-37
 		INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml
 		INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-27:12
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-29:12
 		INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-27:12
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:1-29:12
 		INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:2:11-69
@@ -59,7 +60,7 @@ ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:4:5-66
 	android:name
 		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:6:5-25:19
+ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:6:5-27:19
 MERGED from [com.google.android.material:material:1.1.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/c9350c4470b6f4895016aaf418fed985/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/c9350c4470b6f4895016aaf418fed985/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/utsav/.gradle/caches/transforms-2/files-2.1/213ad6fce5ea38e5799c707ff664b050/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
@@ -75,45 +76,45 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/utsav/.gradle/ca
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/73530a2d0c1df4b3085807c82555ce12/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:9:9-41
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:10:9-54
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:8:9-43
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:12:9-45
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:13:9-45
+	android:name
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:7:9-34
 activity#com.utsavbucky.onebanc.checkout
-ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:13:9-14:42
+ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:14:9-15:42
 	android:label
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:14:13-40
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:15:13-40
 	android:name
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:13:19-43
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:14:19-43
 activity#com.utsavbucky.onebanc.MenuActivity
-ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:15:9-16:40
+ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:16:9-17:40
 	android:label
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:16:13-38
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:17:13-38
 	android:name
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:15:19-47
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:16:19-47
 activity#com.utsavbucky.onebanc.MainActivity
-ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:17:9-24:20
-	android:theme
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:18:13-44
+ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:18:9-26:20
 	android:name
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:17:19-47
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:18:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:19:13-23:29
+ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:20:17-69
+ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:20:25-66
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:22:17-77
+ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:22:27-74
+		ADDED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml:24:27-74
 uses-sdk
 INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/utsav/Downloads/OneBanc/app/src/main/AndroidManifest.xml
@@ -128,6 +129,8 @@ MERGED from [androidx.appcompat:appcompat:1.1.0] /home/utsav/.gradle/caches/tran
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/780dca39713ff2fcf4eadcaf494ac982/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/utsav/.gradle/caches/transforms-2/files-2.1/213ad6fce5ea38e5799c707ff664b050/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/utsav/.gradle/caches/transforms-2/files-2.1/213ad6fce5ea38e5799c707ff664b050/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/7814cceeb7ac44ad46459a3c3c62875b/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/7814cceeb7ac44ad46459a3c3c62875b/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/1fa276bd61947c3e74ed195b3ad0a13b/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/1fa276bd61947c3e74ed195b3ad0a13b/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/utsav/.gradle/caches/transforms-2/files-2.1/c85e1f195321245fafe1a599b5dddf47/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41

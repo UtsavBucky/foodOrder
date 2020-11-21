@@ -8,6 +8,7 @@
         <item name="colorPrimary">@color/black</item>
 
 
+
     </style>
     <style name="Dialog" parent="@style/AppTheme">
         <item name="android:windowBackground">@android:color/transparent</item>

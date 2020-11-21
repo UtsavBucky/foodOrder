@@ -32,6 +32,7 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        getSupportActionBar().setTitle("Menu");
 
         menuRecyclerView = findViewById(R.id.items_list);
         checkoutButton = findViewById(R.id.order_button);

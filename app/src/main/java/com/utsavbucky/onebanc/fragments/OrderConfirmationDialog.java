@@ -16,6 +16,7 @@ import android.widget.RelativeLayout;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import com.utsavbucky.onebanc.MainActivity;
 import com.utsavbucky.onebanc.R;
@@ -32,12 +33,16 @@ public class OrderConfirmationDialog extends DialogFragment {
         AlertDialog.Builder builder = new AlertDialog.Builder(context, R.style.Dialog);
         final LayoutInflater inflater = LayoutInflater.from(context);
         dialogView = inflater.inflate(R.layout.order_confirmation_dialog,null);
+
         dismissButton = dialogView.findViewById(R.id.homeBtn);
 
         dismissButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), MainActivity.class);
+                intent.setAction("order_placed");
+                LocalBroadcastManager.getInstance(getContext()).sendBroadcast(intent);
+
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 getDialog().dismiss();

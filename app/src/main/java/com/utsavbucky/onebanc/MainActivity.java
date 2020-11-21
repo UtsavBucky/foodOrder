@@ -2,15 +2,21 @@ package com.utsavbucky.onebanc;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
-
+import android.view.Menu;
+import android.view.MenuItem;
 import com.google.gson.Gson;
 import com.utsavbucky.onebanc.adapters.DishAdapter;
 import com.utsavbucky.onebanc.adapters.PreviousOrdersAdapter;
@@ -27,7 +33,7 @@ import java.util.Comparator;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     private ActivityMainBinding binding;
     private int currentPage=0;
     private Timer timer;
@@ -40,15 +46,27 @@ public class MainActivity extends AppCompatActivity {
     SharedPreferences dishSharedPreferences, categorySharedPreferences;
     ArrayList<Orders> ordersList = new ArrayList<>();
     private PreviousOrdersAdapter previousOrdersAdapter;
+    private BroadcastReceiver reciever = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if(intent.getAction().equals("order_placed")){
+                setTopDishes();
+                setPreviousOrders();
+            }
+        }
+    };
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this,R.layout.activity_main);
+        getSupportActionBar().setTitle("Home");
+        LocalBroadcastManager.getInstance(this).registerReceiver(reciever, new IntentFilter("order_placed"));
 
         topDishes = findViewById(R.id.top_dishes);
         previousOrders = findViewById(R.id.previous_orders);
-
         if(Util.getCategoryList(MainActivity.this)== null ||
                 Util.getDishesList(MainActivity.this) == null)
         {
@@ -139,14 +157,42 @@ public class MainActivity extends AppCompatActivity {
         ordersList.clear();
         ordersList = Util.getOrdersList(MainActivity.this);
 
-        Collections.reverse(ordersList);
         if(ordersList!=null && ordersList.size()>0) {
+            Collections.reverse(ordersList);
             binding.previousOrderHeader.setVisibility(View.VISIBLE);
             previousOrdersAdapter = new PreviousOrdersAdapter(MainActivity.this,ordersList);
             LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
             previousOrders.setLayoutManager(layoutManager);
             previousOrders.setItemAnimator(new DefaultItemAnimator());
             previousOrders.setAdapter(previousOrdersAdapter);
+        }
+    }
+
+
+    private void setNewLocale(AppCompatActivity mContext, @LocaleManager.LocaleDef String language) {
+        LocaleManager.setNewLocale(this, language);
+        Intent intent = mContext.getIntent();
+        startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.laungua_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.one:
+                setNewLocale(this, LocaleManager.ENGLISH);
+                return true;
+            case R.id.two:
+                setNewLocale(this, LocaleManager.HINDI);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 }
