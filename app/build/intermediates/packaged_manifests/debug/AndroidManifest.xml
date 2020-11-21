@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name="com.utsavbucky.onebanc.OneBacApp"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -20,8 +21,12 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.OneBanc" >
-        <activity android:name="com.utsavbucky.onebanc.checkout" />
-        <activity android:name="com.utsavbucky.onebanc.MenuActivity" />
+        <activity
+            android:name="com.utsavbucky.onebanc.checkout"
+            android:parentActivityName="com.utsavbucky.onebanc.MenuActivity" />
+        <activity
+            android:name="com.utsavbucky.onebanc.MenuActivity"
+            android:parentActivityName="com.utsavbucky.onebanc.MainActivity" />
         <activity android:name="com.utsavbucky.onebanc.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

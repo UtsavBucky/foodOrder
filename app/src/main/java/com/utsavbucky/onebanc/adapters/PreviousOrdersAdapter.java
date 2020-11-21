@@ -1,5 +1,6 @@
 package com.utsavbucky.onebanc.adapters;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +18,8 @@ import java.util.List;
 
 public class PreviousOrdersAdapter extends RecyclerView.Adapter<PreviousOrdersAdapter.MyViewHolder> {
     private List<Orders> ordersList;
+    private Context context;
+
     class MyViewHolder extends RecyclerView.ViewHolder {
         TextView date, orderId, itemTotal;
         List<Dishes> dishList;
@@ -34,6 +37,7 @@ public class PreviousOrdersAdapter extends RecyclerView.Adapter<PreviousOrdersAd
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        context=parent.getContext();
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.previous_order_item, parent, false);
         return new MyViewHolder(itemView);
@@ -44,7 +48,7 @@ public class PreviousOrdersAdapter extends RecyclerView.Adapter<PreviousOrdersAd
 
         holder.date.setText(order.orderDate);
         holder.itemTotal.setText("Rs."+String.valueOf(order.orderPrice));
-        holder.orderId.setText(order.orderId);
+        holder.orderId.setText(context.getString(R.string.order_id)+order.orderId);
 
     }
     @Override

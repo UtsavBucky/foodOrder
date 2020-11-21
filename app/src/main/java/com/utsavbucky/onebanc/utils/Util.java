@@ -10,7 +10,9 @@ import com.utsavbucky.onebanc.models.Category;
 import com.utsavbucky.onebanc.models.Dishes;
 import com.utsavbucky.onebanc.models.Orders;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -49,6 +51,18 @@ public class Util {
         };
         ArrayList<Category> categoryList = gson.fromJson(json, token.getType());
         return categoryList;
+
+    }
+
+    public static String convertDateToString(Date givenDate) {
+        String dateTime="";
+        if (givenDate!=null){
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-dd_HH-mm-ss");
+            dateTime = dateFormat.format(givenDate);
+        }
+
+        return  dateTime;
+
 
     }
 

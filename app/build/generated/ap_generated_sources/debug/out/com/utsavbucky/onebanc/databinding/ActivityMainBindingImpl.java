@@ -20,7 +20,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     }
     // views
     @NonNull
-    private final androidx.appcompat.widget.LinearLayoutCompat mboundView0;
+    private final androidx.core.widget.NestedScrollView mboundView0;
     // variables
     // values
     // listeners
@@ -35,7 +35,7 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
             , (androidx.recyclerview.widget.RecyclerView) bindings[2]
             , (androidx.viewpager.widget.ViewPager) bindings[1]
             );
-        this.mboundView0 = (androidx.appcompat.widget.LinearLayoutCompat) bindings[0];
+        this.mboundView0 = (androidx.core.widget.NestedScrollView) bindings[0];
         this.mboundView0.setTag(null);
         setRootTag(root);
         // listeners

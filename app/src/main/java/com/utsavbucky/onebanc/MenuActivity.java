@@ -15,6 +15,7 @@ import android.widget.RelativeLayout;
 import com.utsavbucky.onebanc.adapters.DishAdapter;
 import com.utsavbucky.onebanc.adapters.MenusAdapter;
 import com.utsavbucky.onebanc.models.Dishes;
+import com.utsavbucky.onebanc.utils.Util;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -23,16 +24,29 @@ public class MenuActivity extends AppCompatActivity {
     RecyclerView menuRecyclerView;
     private MenusAdapter menuAdapter;
     ArrayList<Dishes> menulist = new ArrayList<>();
+    ArrayList<Dishes> dishesList = new ArrayList<>();
     ArrayList<Dishes> finalOrderList = new ArrayList<>();
     RelativeLayout checkoutButton;
+    int categoryId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        getSupportActionBar().setTitle("Menu");
 
         menuRecyclerView = findViewById(R.id.items_list);
         checkoutButton = findViewById(R.id.order_button);
+        Intent intent = getIntent();
+        categoryId = intent.getIntExtra("category_id",0);
         setMenuList();
+
+        dishesList = Util.getDishesList(MenuActivity.this);
+        for(int i=0;i<dishesList.size();i++){
+           if(dishesList.get(i).dishCategory == categoryId){
+               menulist.add(dishesList.get(i));
+           }
+        }
+
 
         checkoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,12 +70,8 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     private void setMenuList() {
-        menulist.add(new Dishes("","Dhokla","1",constants.NORTH_INDIAN,100,0,0));
-        menulist.add(new Dishes("","Dosa","2", constants.SOUTH_INDIAN,80,0,0));
-        menulist.add(new Dishes("","Paneer pasanda","3", constants.NORTH_INDIAN, 200,0,0));
-        menulist.add(new Dishes("","Pizza","4", constants.ITALIAN, 350,0,0));
-        menulist.add(new Dishes("","Burger","5", constants.CHINESE,120,0,0));
-        menuAdapter = new MenusAdapter(menulist);
+
+        menuAdapter = new MenusAdapter(MenuActivity.this,menulist);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
         menuRecyclerView.setLayoutManager(layoutManager);
         menuRecyclerView.setItemAnimator(new DefaultItemAnimator());

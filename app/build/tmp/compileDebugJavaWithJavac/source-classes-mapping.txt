@@ -1,7 +1,15 @@
 com/utsavbucky/onebanc/constants.java
  com.utsavbucky.onebanc.constants
+com/utsavbucky/onebanc/OneBacApp.java
+ com.utsavbucky.onebanc.OneBacApp
+com/utsavbucky/onebanc/utils/Util.java
+ com.utsavbucky.onebanc.utils.Util
+ com.utsavbucky.onebanc.utils.Util$1
+ com.utsavbucky.onebanc.utils.Util$2
+ com.utsavbucky.onebanc.utils.Util$3
 com/utsavbucky/onebanc/adapters/ViewPagerAdapter.java
  com.utsavbucky.onebanc.adapters.ViewPagerAdapter
+ com.utsavbucky.onebanc.adapters.ViewPagerAdapter$1
 com/utsavbucky/onebanc/adapters/MenusAdapter.java
  com.utsavbucky.onebanc.adapters.MenusAdapter
  com.utsavbucky.onebanc.adapters.MenusAdapter$1
@@ -22,27 +30,30 @@ com/utsavbucky/onebanc/checkout.java
  com.utsavbucky.onebanc.checkout$1
 com/utsavbucky/onebanc/databinding/ActivityMainBinding.java
  com.utsavbucky.onebanc.databinding.ActivityMainBinding
-com/utsavbucky/onebanc/MainActivity.java
- com.utsavbucky.onebanc.MainActivity
- com.utsavbucky.onebanc.MainActivity$1
- com.utsavbucky.onebanc.MainActivity$2
+com/utsavbucky/onebanc/DataBindingTriggerClass.java
+ com.utsavbucky.onebanc.DataBindingTriggerClass
 com/utsavbucky/onebanc/models/Orders.java
  com.utsavbucky.onebanc.models.Orders
 com/utsavbucky/onebanc/adapters/DishAdapter.java
  com.utsavbucky.onebanc.adapters.DishAdapter
- com.utsavbucky.onebanc.adapters.DishAdapter$1
  com.utsavbucky.onebanc.adapters.DishAdapter$MyViewHolder
 com/utsavbucky/onebanc/adapters/OrdersAdapter.java
  com.utsavbucky.onebanc.adapters.OrdersAdapter
  com.utsavbucky.onebanc.adapters.OrdersAdapter$MyViewHolder
+com/utsavbucky/onebanc/LocaleManager.java
+ com.utsavbucky.onebanc.LocaleManager
+ com.utsavbucky.onebanc.LocaleManager$LocaleDef
 com/utsavbucky/onebanc/adapters/BaseViewHolder.java
  com.utsavbucky.onebanc.adapters.BaseViewHolder
 com/utsavbucky/onebanc/models/Dishes.java
  com.utsavbucky.onebanc.models.Dishes
-com/utsavbucky/onebanc/utils/Util.java
- com.utsavbucky.onebanc.utils.Util
- com.utsavbucky.onebanc.utils.Util$1
- com.utsavbucky.onebanc.utils.Util$2
- com.utsavbucky.onebanc.utils.Util$3
-com/utsavbucky/onebanc/DataBindingTriggerClass.java
- com.utsavbucky.onebanc.DataBindingTriggerClass
+com/utsavbucky/onebanc/BaseActivity.java
+ com.utsavbucky.onebanc.BaseActivity
+com/utsavbucky/onebanc/MainActivity.java
+ com.utsavbucky.onebanc.MainActivity
+ com.utsavbucky.onebanc.MainActivity$1
+ com.utsavbucky.onebanc.MainActivity$2
+ com.utsavbucky.onebanc.MainActivity$3
+com/utsavbucky/onebanc/OrderConfirmationDialog.java
+ com.utsavbucky.onebanc.OrderConfirmationDialog
+ com.utsavbucky.onebanc.OrderConfirmationDialog$1
