@@ -48,13 +48,18 @@ public class MainActivity extends AppCompatActivity {
         topDishes = findViewById(R.id.top_dishes);
         previousOrders = findViewById(R.id.previous_orders);
 
-        prepareData();
+        if(Util.getCategoryList(MainActivity.this)== null ||
+                Util.getDishesList(MainActivity.this) == null)
+        {
+            prepareData();
+        }
         setCategoriesList();
         setTopDishes();
         setPreviousOrders();
     }
     
     public void setCategoriesList(){
+        categoryList = Util.getCategoryList(MainActivity.this);
         binding.viewPager.setAdapter(new ViewPagerAdapter(this, categoryList));
         final Handler handler = new Handler();
 
@@ -85,16 +90,16 @@ public class MainActivity extends AppCompatActivity {
         categoryList.add(new Category("https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F2033%2Ftrend20180920125236.jpg",constants.SOUTH_INDIAN,"South Indian"));
         categoryList.add(new Category("https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/content10735.jpg",constants.ITALIAN,"Italian"));
 
-        dishesList.add(new Dishes("https://cdn2.foodviva.com/static-content/food-images/snacks-recipes/khaman-dhokla-recipe/khaman-dhokla-recipe.jpg","Dhokla","1",constants.NORTH_INDIAN,100,0,0));
-        dishesList.add(new Dishes("https://sukhis.com/wp-content/uploads/2020/01/Dosa-500x400.jpg","Dosa","2", constants.SOUTH_INDIAN,80,0,0));
-        dishesList.add(new Dishes("https://farm1.staticflickr.com/269/19741628821_7ff0dd8b7c_o.jpg","Paneer pasanda","3", constants.NORTH_INDIAN, 200,0,0));
-        dishesList.add(new Dishes("https://farm1.staticflickr.com/269/19741628821_7ff0dd8b7c_o.jpg","Pizza","4", constants.ITALIAN, 350,0,0));
-        dishesList.add(new Dishes("https://simply-delicious-food.com/wp-content/uploads/2015/07/Bacon-and-cheese-burgers-3-500x500.jpg","Burger","5", constants.CHINESE,120,0,0));
-        dishesList.add(new Dishes("https://cdn2.foodviva.com/static-content/food-images/snacks-recipes/khaman-dhokla-recipe/khaman-dhokla-recipe.jpg","Spanakopita","6",constants.MEDITERRANEAN,100,0,0));
-        dishesList.add(new Dishes("https://sukhis.com/wp-content/uploads/2020/01/Dosa-500x400.jpg","Chicken Shawarma","7", constants.MEDITERRANEAN,80,0,0));
-        dishesList.add(new Dishes("https://farm1.staticflickr.com/269/19741628821_7ff0dd8b7c_o.jpg","Paneer kofta","8", constants.NORTH_INDIAN, 200,0,0));
-        dishesList.add(new Dishes("https://farm1.staticflickr.com/269/19741628821_7ff0dd8b7c_o.jpg","Garlic Bread","9", constants.ITALIAN, 350,0,0));
-        dishesList.add(new Dishes("https://simply-delicious-food.com/wp-content/uploads/2015/07/Bacon-and-cheese-burgers-3-500x500.jpg","Chowmein","10", constants.CHINESE,120,0,0));
+        dishesList.add(new Dishes("https://cdn2.foodviva.com/static-content/food-images/snacks-recipes/khaman-dhokla-recipe/khaman-dhokla-recipe.jpg","Dhokla",1,constants.NORTH_INDIAN,100,0,0));
+        dishesList.add(new Dishes("https://sukhis.com/wp-content/uploads/2020/01/Dosa-500x400.jpg","Dosa",2, constants.SOUTH_INDIAN,80,0,0));
+        dishesList.add(new Dishes("https://farm1.staticflickr.com/269/19741628821_7ff0dd8b7c_o.jpg","Paneer pasanda",3, constants.NORTH_INDIAN, 200,0,0));
+        dishesList.add(new Dishes("https://farm1.staticflickr.com/269/19741628821_7ff0dd8b7c_o.jpg","Pizza",4, constants.ITALIAN, 350,0,0));
+        dishesList.add(new Dishes("https://simply-delicious-food.com/wp-content/uploads/2015/07/Bacon-and-cheese-burgers-3-500x500.jpg","Burger",5, constants.CHINESE,120,0,0));
+        dishesList.add(new Dishes("https://cdn2.foodviva.com/static-content/food-images/snacks-recipes/khaman-dhokla-recipe/khaman-dhokla-recipe.jpg","Spanakopita",6,constants.MEDITERRANEAN,100,0,0));
+        dishesList.add(new Dishes("https://sukhis.com/wp-content/uploads/2020/01/Dosa-500x400.jpg","Chicken Shawarma",7, constants.MEDITERRANEAN,80,0,0));
+        dishesList.add(new Dishes("https://farm1.staticflickr.com/269/19741628821_7ff0dd8b7c_o.jpg","Paneer kofta",8, constants.NORTH_INDIAN, 200,0,0));
+        dishesList.add(new Dishes("https://farm1.staticflickr.com/269/19741628821_7ff0dd8b7c_o.jpg","Garlic Bread",9, constants.ITALIAN, 350,0,0));
+        dishesList.add(new Dishes("https://simply-delicious-food.com/wp-content/uploads/2015/07/Bacon-and-cheese-burgers-3-500x500.jpg","Chowmein",0, constants.CHINESE,120,0,0));
 
         dishSharedPreferences=getSharedPreferences(constants.DISHES_LIST,0);
         categorySharedPreferences = getSharedPreferences(constants.CATEGORIES_LIST,0);
@@ -117,10 +122,12 @@ public class MainActivity extends AppCompatActivity {
         Collections.sort(dishesList, new Comparator<Dishes>() {
             @Override
             public int compare(Dishes d1, Dishes d2) {
-                return d1.soldQuantity - d2.soldQuantity;
+                return d2.soldQuantity - d1.soldQuantity;
             }
         });
-        topDishesAdapter = new DishAdapter(MainActivity.this,dishesList);
+        ArrayList<Dishes> top5Dishes = new ArrayList<>();
+
+        topDishesAdapter = new DishAdapter(MainActivity.this,dishesList.subList(0,5));
         LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.HORIZONTAL, false);
         topDishes.setLayoutManager(layoutManager);
         topDishes.setItemAnimator(new DefaultItemAnimator());
@@ -130,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
     public void setPreviousOrders() {
         ordersList.clear();
         ordersList = Util.getOrdersList(MainActivity.this);
+        Collections.reverse(ordersList);
         if(ordersList!=null && ordersList.size()>0) {
             previousOrdersAdapter = new PreviousOrdersAdapter(ordersList);
             LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);

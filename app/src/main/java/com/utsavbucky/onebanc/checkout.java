@@ -1,6 +1,7 @@
 package com.utsavbucky.onebanc;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -82,7 +83,7 @@ public class checkout extends AppCompatActivity {
                     total = total + orderlist.get(i).quantity*orderlist.get(i).price;
 
                     for(int j=0; j<disheslist.size();j++){
-                        if(orderlist.get(i)==disheslist.get(j)){
+                        if(orderlist.get(i).dishId==disheslist.get(j).dishId){
                             disheslist.get(j).soldQuantity = disheslist.get(j).soldQuantity + orderlist.get(i).quantity;
                             break;
                         }
@@ -94,7 +95,7 @@ public class checkout extends AppCompatActivity {
                 SharedPreferences.Editor editorDishes = dishSharedPreferences.edit();
                 editorDishes.putString("dishesList",new Gson().toJson(disheslist));
                 editorDishes.apply();
-
+                showOrderConfirmationDialog();
 
             }
 
@@ -116,7 +117,12 @@ public class checkout extends AppCompatActivity {
         orderPrice.setText("Rs."+total);
     }
 
+    public void showOrderConfirmationDialog(){
 
+            DialogFragment orderDialog = new OrderConfirmationDialog();
+            orderDialog.show(getSupportFragmentManager(), orderDialog.getTag());
+            orderDialog.setCancelable(false);
+    }
 
     String generateOrderId(int len){
         StringBuilder sb = new StringBuilder(len);

@@ -1,5 +1,6 @@
 package com.utsavbucky.onebanc.adapters;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.utsavbucky.onebanc.MenuActivity;
 import com.utsavbucky.onebanc.R;
 import com.utsavbucky.onebanc.models.Dishes;
 
@@ -17,6 +20,7 @@ import java.util.List;
 public class MenusAdapter extends RecyclerView.Adapter<MenusAdapter.MyViewHolder> {
     private List<Dishes> dishesList;
     int q = 0;
+    Context mContext;
     class MyViewHolder extends RecyclerView.ViewHolder {
         TextView dishName, quantity, plus, minus, price;
         ImageView dishImage;
@@ -31,9 +35,10 @@ public class MenusAdapter extends RecyclerView.Adapter<MenusAdapter.MyViewHolder
             minus = view.findViewById(R.id.minus);
         }
     }
-    public MenusAdapter(List<Dishes> dishesList)
+    public MenusAdapter(Context context, List<Dishes> dishesList)
     {
         this.dishesList = dishesList;
+        this.mContext = context;
     }
     @NonNull
     @Override
@@ -48,7 +53,11 @@ public class MenusAdapter extends RecyclerView.Adapter<MenusAdapter.MyViewHolder
         holder.dishName.setText(dish.dishName);
         holder.price.setText("Rs."+String.valueOf(dish.price));
         holder.minus.setVisibility(View.GONE);
-
+        try{
+            Glide.with(mContext).load(dishesList.get(position).getDishImg()).into(holder.dishImage);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         q = dish.quantity;
         holder.plus.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -70,7 +70,7 @@ public class MenuActivity extends AppCompatActivity {
 
     private void setMenuList() {
 
-        menuAdapter = new MenusAdapter(menulist);
+        menuAdapter = new MenusAdapter(MenuActivity.this,menulist);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
         menuRecyclerView.setLayoutManager(layoutManager);
         menuRecyclerView.setItemAnimator(new DefaultItemAnimator());

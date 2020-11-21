@@ -44,7 +44,7 @@ public class PreviousOrdersAdapter extends RecyclerView.Adapter<PreviousOrdersAd
 
         holder.date.setText(order.orderDate);
         holder.itemTotal.setText("Rs."+String.valueOf(order.orderPrice));
-        holder.orderId.setText(order.orderId);
+        holder.orderId.setText("Order id: #"+order.orderId);
 
     }
     @Override
